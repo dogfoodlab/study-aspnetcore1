@@ -14,4 +14,10 @@ Global
 		{ACB0839F-9ACD-441F-92B8-4C465C0ED31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACB0839F-9ACD-441F-92B8-4C465C0ED31E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.StandardHeader = $2
+	EndGlobalSection
 EndGlobal

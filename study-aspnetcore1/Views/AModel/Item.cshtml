@@ -1,0 +1,21 @@
+﻿@model AModel
+@{
+    ViewData["Title"] = "AModel item";
+}
+
+@Html.ActionLink("List", "List")
+
+<table border="1">
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.ID)</th>
+        <td>@Html.DisplayFor(m => m.ID)</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.A1)</th>
+        <td>@Html.DisplayFor(m => m.A1)</td>
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.A2)</th>
+        <td>@Html.DisplayFor(m => m.A2)</td>
+    </tr>
+</table>

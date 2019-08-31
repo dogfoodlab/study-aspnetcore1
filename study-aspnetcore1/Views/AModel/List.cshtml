@@ -1,0 +1,28 @@
+﻿@model IEnumerable<AModel>
+@{
+    ViewData["Title"] = "AModel list";
+}
+
+@Html.ActionLink("Create", "Create")
+
+<table border="1">
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.SingleOrDefault().ID)</th>
+        <th>@Html.DisplayNameFor(m => m.SingleOrDefault().A1)</th>
+        <th>@Html.DisplayNameFor(m => m.SingleOrDefault().A2)</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => @item.ID)</td>
+            <td>@Html.DisplayFor(m => @item.A1)</td>
+            <td>@Html.DisplayFor(m => @item.A2)</td>
+            <td>
+                @Html.ActionLink("Item", "Item", new { id = item.ID })
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+            </td>
+        </tr>
+    }
+</table>
+

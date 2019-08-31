@@ -1,0 +1,30 @@
+﻿@model AModel
+@{
+    ViewData["Title"] = "AModel edit";
+}
+
+@Html.ActionLink("List", "List")
+
+@using (@Html.BeginForm("Edit", null, new { id = Model.ID }, FormMethod.Post))
+{
+    <table border="1">
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.ID)</th>
+            <td>@Html.DisplayFor(m => m.ID)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.A1)</th>
+            <td>@Html.TextBoxFor(m => m.A1)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.A2)</th>
+            <td>@Html.TextBoxFor(m => m.A2)</td>
+        </tr>
+    </table>
+    <button>Update</button>
+}
+
+@using (@Html.BeginForm("Delete", null, new { id = Model.ID }, FormMethod.Post))
+{
+    <button>Delete</button>
+}

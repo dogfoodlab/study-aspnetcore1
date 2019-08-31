@@ -1,0 +1,26 @@
+﻿@model AModel
+@{
+    ViewData["Title"] = "AModel create";
+}
+
+@Html.ActionLink("List", "List")
+
+@using (@Html.BeginForm("Create", null, new { }, FormMethod.Post))
+{
+    <table border="1">
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.ID)</th>
+            <td>*</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.A1)</th>
+            <td>@Html.TextBoxFor(m => m.A1)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.A2)</th>
+            <td>@Html.TextBoxFor(m => m.A2)</td>
+        </tr>
+    </table>
+
+    <button>Create</button>
+}
